@@ -1,0 +1,51 @@
+/* Font definition */
+@font-face {
+  font-family: 'MyFont';
+  src: url('../fonts/my-font.ttf') format('truetype');
+}
+
+/* Basic classes */
+.mf {
+  display: inline-block;
+  font-family: 'MyFont';
+}
+.mf-haskell:before {
+  content: '\f000';
+}
+
+/* Larger icons */
+.mf-lg {
+  font-size: 1.33333333em;
+}
+.mf-2x {
+  font-size: 2em;
+}
+.mf-3x {
+  font-size: 3em;
+}
+.mf-4x {
+  font-size: 4em;
+}
+.mf-5x {
+  font-size: 5em;
+}
+
+/* Fixed width icons */
+.mf-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+/* Rotated icons */
+.mf-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.mf-rotate-180 {
+  transform: rotate(180deg);
+}
+.mf-rotate-270 {
+  transform: rotate(270deg);
+}
